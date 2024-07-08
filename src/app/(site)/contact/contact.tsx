@@ -30,6 +30,7 @@ const Contact: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-3 justify-center gap-10 mt-14 xs:px-10 sm:px-15 lg:px-25 w-full">
           {contacts.map((contact, index) => (
             <a
+              key={index}
               href={contact.href}
               target="_blank"
               rel="noopener noreferrer"

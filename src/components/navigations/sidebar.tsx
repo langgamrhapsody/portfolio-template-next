@@ -58,8 +58,9 @@ const Sidebar: FC<{ children: React.ReactNode }> = ({ children }) => {
               ))}
             </div>
             <div className="flex gap-4 items-center justify-center">
-              {socialList.map((social) => (
+              {socialList.map((social, index) => (
                 <a
+                  key={index}
                   target="_blank"
                   rel="noopener noreferrer"
                   href={social.href}
