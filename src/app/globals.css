@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+html,
+html body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-montserrat);
+}
